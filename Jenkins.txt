@@ -1,0 +1,20 @@
+1). Pass Parameters from 1 Build to another Build
+
+
+a. Execute a shell script as a Build Step
+
+b. Define the parameter as such param=hello; nameparam="text=$param"; echo $nameparam > /tmp/paramsfile
+
+c. Add another Build Step as "Trigger/call builds on other project"
+
+d. Define the project to pass the parameters onto: {folder}/{build}
+
+e. Specify the parameter file location: /tmp/paramsfile
+
+f. On the receiving Build, make it a parametirized Build
+
+g. Add a string parameter
+
+h. Specify the name of the parameter as the key, specified in the file: text
+
+i. Leave the value as blank
