@@ -1,0 +1,17 @@
+@Library('global-lib') _
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                script{
+                    mail = new emails()
+                    mail.mails.each {println "name: $it.key, email: $it.value"}
+                }
+            }
+        }
+    }
+}
+
