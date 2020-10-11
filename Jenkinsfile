@@ -22,7 +22,8 @@ pipeline {
         sh '''chmod +x testscript.sh
         ./testscript.sh
         pwd
-        ls -a'''
+        ls -a
+        echo $PATH'''
       }
     }
   }
