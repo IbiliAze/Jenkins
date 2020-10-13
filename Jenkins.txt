@@ -18,3 +18,32 @@ g. Add a string parameter
 h. Specify the name of the parameter as the key, specified in the file: text
 
 i. Leave the value as blank
+
+
+
+
+
+2). Local Library
+
+
+a. Make a folder
+
+b. Add a Pipeline Library
+
+c. If you don't choose implicitly, use this code at the top of your Pipeline: @Library('mail_list') _
+
+d. Use moderm SCM to host the list in a groovy file, eg. mailing list
+
+
+
+
+
+3). Global Library
+
+
+a. Manage Jenkins
+
+b. Configure System
+
+c. Same step as above following step b).
+

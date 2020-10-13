@@ -1,0 +1,4 @@
+Monitoring
+Paramiterizd Trigger plugin
+Copy Artifacts Plugin
+Blue Ocean
