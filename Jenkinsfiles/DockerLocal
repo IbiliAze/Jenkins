@@ -1,0 +1,22 @@
+pipeline {
+  agent none
+  stages {
+
+    stage('TestContainer') {
+      agent {
+        docker { image 'ibiliaze/engine4:latest' }
+      }
+      steps {
+        sh 'nginx -v'
+      }
+    }
+    stage('TestContainer2') {
+      agent {
+        docker { image 'ibiliaze/engine3:latest' }
+      }
+      steps {
+        sh 'nginx -v'
+      }
+    }
+  }
+}

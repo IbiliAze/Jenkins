@@ -1,0 +1,13 @@
+pipeline {
+  agent {
+    docker { image 'ibiliaze/engine4:latest' }
+  }
+  stages {
+
+    stage('TestContainer') {
+      steps {
+        sh 'nginx -v'
+      }
+    }
+  }
+}

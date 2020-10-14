@@ -1,0 +1,18 @@
+pipeline {
+  agent any
+  environment{
+    global='globalvar1'
+  }
+  stages {
+
+    stage('LocalVar') {
+      environment{
+        local='localvar1'
+      }
+      steps {
+        echo local
+        echo global
+      }
+    }
+  }
+}
