@@ -2,3 +2,5 @@ Monitoring
 Paramiterizd Trigger plugin
 Copy Artifacts Plugin
 Blue Ocean
+Docker Pipeline
+Github Integration
