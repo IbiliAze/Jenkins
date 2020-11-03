@@ -11,14 +11,11 @@ echo step 3
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
 echo step 4
-sudo yum install java jenkins git
+sudo yum install -y java jenkins git
 
 echo step 5
 sudo systemctl start jenkins
 
 echo step 6
 sudo systemctl enable jenkins
-
-echo step 7
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
